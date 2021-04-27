@@ -2,17 +2,31 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {MiComponente} from './Components/Example_Component/Example_Component.component';
-import { SegundoComponenteComponent } from './Components/segundo-componente/segundo-componente.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { NaviagationBarComponent } from './Components/naviagation-bar/naviagation-bar.component';
+import { TextBoxComponent } from './Components/text-box/text-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponente,
-    SegundoComponenteComponent
+    NaviagationBarComponent,
+    TextBoxComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
